@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.laptop {
+  height: 200px;
+
+}
+
+.space {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  inset: 0;
+  background-color: #ddd;
+  z-index: -1;
+}
