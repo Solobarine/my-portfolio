@@ -1,0 +1,11 @@
+Model Information:
+* title:	Earth 3d model
+* source:	https://sketchfab.com/3d-models/earth-3d-model-172364f04c2a439c8c3c85e85575c97b
+* author:	Aditya Graphical (https://sketchfab.com/Adityakm)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Earth 3d model" (https://sketchfab.com/3d-models/earth-3d-model-172364f04c2a439c8c3c85e85575c97b) by Aditya Graphical (https://sketchfab.com/Adityakm) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
