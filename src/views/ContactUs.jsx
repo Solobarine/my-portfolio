@@ -1,5 +1,5 @@
 import Contact from "../components/Contact"
-import Laptop from "../components/scenes/Laptop"
+import Earth from "../components/scenes/Earth"
 import Space from "../components/scenes/Space"
 
 const ContactUs = () => (
@@ -7,7 +7,7 @@ const ContactUs = () => (
     <Space />
     <div>
       <Contact />
-      <Laptop />
+      <Earth />
     </div>
   </section>
 )
