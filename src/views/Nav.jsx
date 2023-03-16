@@ -8,7 +8,7 @@ const Nav = () => {
     <nav className="nav">
       <div>
         <div>
-          <a href='#'><img src={logo[0].img} alt="Solly"/></a>
+          <a href='.nav'><img src={logo[0].img} alt="Solly"/></a>
           <p><span id='s'>S</span>olly<span id="title"> | Web Developer</span></p>
         </div>
         <div id='links'>
@@ -20,8 +20,8 @@ const Nav = () => {
         <div id='close'>
           {
             (isOpen)
-              ? <img onClick={() => setIsOpen(!isOpen)} src={buttons.close}/>
-              : <img onClick={() => setIsOpen(!isOpen)} src={buttons.open}/>
+              ? <img onClick={() => setIsOpen(!isOpen)} src={buttons.close} alt="close"/>
+              : <img onClick={() => setIsOpen(!isOpen)} src={buttons.open} alt="open"/>
           }
       {console.log(isOpen)}
           
