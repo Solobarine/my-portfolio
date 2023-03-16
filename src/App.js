@@ -7,7 +7,6 @@ import Experience from './components/Experience';
 import Works from './components/Works';
 import About from './views/About';
 import Footer from './views/Footer';
-import './App.css'
 
 function App() {
   return (

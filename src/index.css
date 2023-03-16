@@ -10,6 +10,7 @@ body {
 
 .App {
   position: relative;
+  overflow: hidden;
 }
 
 .nav {
@@ -403,6 +404,7 @@ footer p {
 @media only screen and (max-width: 600px) {
   .nav > div {
     height: 60px;
+    position: static;
   }
 
   .nav > div > div:nth-child(1) img {
