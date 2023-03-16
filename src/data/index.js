@@ -95,6 +95,7 @@ export const projects = [
     ]
   },
   {
+    image: '/project_image/space-hub.JPG',
     name: 'Space Traveller\' Hub',
     description: 'This website used The Space-X APi. It allows users make reservations on missions, rockets and dragons. Users can also view all avaliable missions, rockets and dragons. They can as well see the reservations they made.',
     languages: ['HTML', 'CSS', 'JavaScript'],
@@ -118,6 +119,7 @@ export const projects = [
     ]
   },
   {
+    image: '/project_image/free-games.JPG',
     name: 'Free Games',
     description: 'This site shows users the list of free games avaliable. Users also have the ability to like or comment on the game and make reservations. Users can also see the comments and reservations of other users.',
     languages: ['HTML', 'CSS', 'JavaScript'],
@@ -141,6 +143,7 @@ export const projects = [
     ]
   },
   {
+    image: '/project_image/nba.JPG',
     name: 'Nba World',
     description: 'A site where users can see all NBA teams filtered according to their respective divisions.',
     languages: ['HTML', 'CSS', 'JavaScript'],
@@ -164,6 +167,7 @@ export const projects = [
     ]
   },
   {
+    image: '/project_image/leaderboard.JPG',
     name: 'Leaderboard',
     description: 'Users can use the Leaderboard website to save highscores along with their name and also view all the scores previously entered. ',
     languages: ['HTML', 'CSS', 'JavaScript'],
@@ -195,6 +199,7 @@ export const projects = [
     ]
   },
   {
+    image: '/project_image/book-store.JPG',
     name: 'Bookstore',
     description: 'A website that makes organizing your books easy for you. You can catalog your favourite books and store them using the local storage of the browser.',
     languages: ['HTML', 'CSS', 'JavaScript'],
@@ -218,6 +223,7 @@ export const projects = [
     ]
   },
   {
+    image: '/project_image/ruby.png',
     name: 'School Library',
     description: 'A commabd-line app which lets users register themselves, create a book and reserve a book.',
     languages: ['Ruby'],
@@ -237,6 +243,7 @@ export const projects = [
     ]  
   },
   {
+    image: '/project_image/ruby.png',
     name: 'Catalog',
     description: 'This command line app built with Ruby can serve as an organizer. It enables users sort their properties into categories.',
     languages: ['Ruby'],
