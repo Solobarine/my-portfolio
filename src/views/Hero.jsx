@@ -2,7 +2,7 @@ import ComputerScene from "../components/scenes/ComputerScene";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="landing">
       <div>
       <div id='strip'>
         <div/>
