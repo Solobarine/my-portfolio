@@ -40,13 +40,42 @@ body {
   width: 35%;
   margin: auto;
   padding: 0 15px;
-  justify-content: space-between;;
+  justify-content: space-between;
+}
+
+#links a {
+  text-decoration: none;
+  color: #eee;
 }
 
 #close {
   width: 40px;
   height: 40px;
   display: none;
+  transition: .3s ease;
+}
+
+#menu {
+  position: fixed;
+  opacity: 0;
+  z-index: 18;
+  top: -150px;
+  border-radius: 30px;
+  right: 10px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background-image: linear-gradient(45deg, rgba(0, 255, 255, 1), rgba(150, 0, 150, .9) 60%);
+  transition: .6s ease;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #eee;
+  width: 150px;
+  text-align: center;
+ ;
 }
 
 .hero > div:nth-child(1) {
@@ -182,8 +211,15 @@ body {
   color: #eee;
 }
 
+.vertical-timeline-element-content.bounce-in {
+  background-image: linear-gradient(45deg, #00adb5, darkmagenta);
+
+}
+
 .experienceCard {
+  margin: auto;
   margin-top: 25px;
+  width: 100%;
 }
 
 .experienceCard ul {
@@ -355,7 +391,7 @@ textarea {
 #contact form h2 {
   grid-column: 1/span 2;
   text-align: center;
-  color: #222;
+  color: #eee;
 }
 
 #contact form input[type='submit'] {
@@ -447,6 +483,10 @@ footer p {
     display: none;
   }
 
+  #menu {
+    opacity: 1;
+  }
+
   .hero {
     padding-top: 130px;
   }
@@ -475,6 +515,10 @@ footer p {
   .tool {
     width: 40px;
     height: 40px;
+  }
+
+  .experienceCard {
+    width: 100%;
   }
 
   #about p {
