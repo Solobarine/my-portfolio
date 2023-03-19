@@ -6,7 +6,7 @@ const Card = ({experience}) => {
   return (
     <div className="experienceCard">
       <VerticalTimelineElement
-      contentStyle={{backgroundColor: 'purple', color: '#eee'}}
+      contentStyle={{ color: '#eee'}}
       date={experience.year}
       icon={
         <div className="school">

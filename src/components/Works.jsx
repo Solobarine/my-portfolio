@@ -1,8 +1,27 @@
+import { useAnimation, motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 import { projects } from "../data";
+import { stagger } from '../data/variants';
 
-const Card = ({project}) => {
+const Card = ({project, index}) => {
+  const controls = useAnimation()
+  
+  const [ref, inView] = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+      }, [controls, inView])
+
   return (
-    <div className="project">
+    <motion.div
+    ref={ref}
+    variants={stagger(index)}
+    initial='hidden'
+    animate={controls}
+    className="project">
       <div>
         <div className="project_links">
         {
@@ -25,7 +44,7 @@ const Card = ({project}) => {
           ))
         }
       </ul>
-    </div>
+    </motion.div>
   )
 }
 
@@ -36,7 +55,7 @@ const Works = () => {
       <div id="projects">
         {
           projects.map((project, index) => (
-            <Card key={index} project={project} />
+            <Card key={index} project={project} index={index} />
           ))
         }
       </div>
