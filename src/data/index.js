@@ -365,6 +365,10 @@ export const technologies = [
     imgUrl: '/technologies/tailwind.svg'
   },
   {
+    name: 'Svelte',
+    imgUrl: '/technologies/svelte-1.svg'
+  },
+  {
     name: 'JavaScript',
     imgUrl: '/technologies/js.png'
   },
@@ -377,11 +381,11 @@ export const technologies = [
     imgUrl: '/technologies/mongodb.svg'
   },
   {
-    namne: 'MYSQL',
-    imgUrl: '/technologies/mysql.png'
+    name: 'MySQL',
+    imgUrl: '/technologies/mysql.svg'
   },
   {
-    name: 'NodeJS',
+    name: 'Node Js',
     imgUrl: '/technologies/node.svg'
   },
   {
@@ -413,12 +417,36 @@ export const technologies = [
     imgUrl: '/technologies/react.png'
   },
   {
+    name: 'Vite',
+    imgUrl: '/technologies/vitejs.svg'
+  },
+  {
     name: 'Redux',
     imgUrl: '/technologies/redux.png'
+  },/*
+  {
+    name: 'Next Js',
+    imgUrl: '/technologies/next-js.svg'
+  },*/
+  {
+    name: 'Three Js',
+    imgUrl: '/technologies/threejs.svg'
+  },
+  {
+    name: 'Pinia',
+    imgUrl: '/technologies/pinia.svg'
   },
   {
     name: 'Vue.js',
     imgUrl: '/technologies/vue.svg'
+  },
+  {
+    name: 'Jest',
+    imgUrl: '/technologies/jest.svg'
+  },
+  {
+    name: 'Webpack',
+    imgUrl: '/technologies/webpack.svg'
   }
 ]
 

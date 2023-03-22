@@ -2,7 +2,6 @@ import ContactUs from './views/ContactUs'
 import OperatingSystem from './components/OperatingSystem';
 import Hero from './views/Hero';
 import Nav from './views/Nav';
-import Menu from './components/Menu';
 import Tech from './components/Tech';
 import Experience from './components/Experience';
 import Works from './components/Works';

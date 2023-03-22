@@ -1,5 +1,6 @@
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Tilt from 'react-parallax-tilt';
 import { useEffect } from 'react';
 import { projects } from "../data";
 import { stagger } from '../data/variants';
@@ -16,13 +17,14 @@ const Card = ({project, index}) => {
       }, [controls, inView])
 
   return (
+    <Tilt>
     <motion.div
     ref={ref}
     variants={stagger(index)}
     initial='hidden'
     animate={controls}
     className="project">
-      <div>
+    <div>
         <div className="project_links">
         {
           project.links.map((item, index) => (
@@ -45,6 +47,7 @@ const Card = ({project, index}) => {
         }
       </ul>
     </motion.div>
+    </Tilt>
   )
 }
 

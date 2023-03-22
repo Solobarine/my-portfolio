@@ -148,7 +148,7 @@ body {
   border-radius: 20px;
   border: 3px solid cyan;
   height: 120px;
-  background-color: #e040fb;
+  background-image: linear-gradient(56deg, orange, #e040fb);
 }
 
 #techContent {
@@ -333,15 +333,15 @@ body {
   padding: 20px;
 }
 
-#about * {
-  text-align: center;
-  margin-bottom: 15px;
-  color: #eee;
+#about p {
+  width: 60%;
 }
 
-#about p {
-  margin: 15px auto;
-  width: 60%;
+#about * {
+  text-align: start;
+  margin-bottom: 15px;
+  color: #eee;
+  margin-left: 15%;
 }
 
 .contact {
@@ -519,6 +519,10 @@ footer p {
 
   .experienceCard {
     width: 100%;
+  }
+
+  #about * {
+    margin-left: 0;
   }
 
   #about p {
