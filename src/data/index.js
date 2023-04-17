@@ -3,7 +3,13 @@ export const logo = [
     img: '/logos/logo.jpg'
   },
   {
+    img: '/logos/s_logo.png'
+  },
+  {
     img: '/logos/x_logo.jpg'
+  },
+  {
+    img: 'logos/x_logo.png'
   }
 ]
 
@@ -365,10 +371,6 @@ export const technologies = [
     imgUrl: '/technologies/tailwind.svg'
   },
   {
-    name: 'Svelte',
-    imgUrl: '/technologies/svelte-1.svg'
-  },
-  {
     name: 'JavaScript',
     imgUrl: '/technologies/js.png'
   },
@@ -423,11 +425,7 @@ export const technologies = [
   {
     name: 'Redux',
     imgUrl: '/technologies/redux.png'
-  },/*
-  {
-    name: 'Next Js',
-    imgUrl: '/technologies/next-js.svg'
-  },*/
+  },
   {
     name: 'Three Js',
     imgUrl: '/technologies/threejs.svg'
@@ -451,5 +449,5 @@ export const technologies = [
 ]
 
 export const about = {
-  pitch: 'Hello and welcome to my about page! My name is Solomon Barine, and I am a Full Stack Developer experienced in creating beautiful and functional web applications. I have developed a strong skill set in a variety of programming languages, including JavaScript, Ruby and PHP, and I am always eager to learn more and robust web applications using server-side languages like Ruby, PHP and databases like MySQL and MongoDB. In addition to my technical skills, I am also a strong communicator and team player. I believe that clear communication and collaboration are essential for creating successful projects, and I always strive to work closely with my clients and colleagues to achieve their goals. Feel free to contact me if you have a project in mind.'
+  pitch: 'Hello and welcome to my about page! My name is Solomon Barine, and I am a Full Stack Developer experienced in creating beautiful and functional web applications. I have developed a strong skill set in a variety of programming languages and I am always eager to improve my skills. In addition to my technical skills, I am also a strong communicator and team player. I believe that clear communication and collaboration are essential for creating successful projects, and I always strive to work closely with my clients and colleagues to achieve their goals. Feel free to contact me if you have a project in mind.'
 }

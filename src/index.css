@@ -101,7 +101,8 @@ body {
 }
 
 .hero {
-  background-image: url('../public/backgrounds/background-1.jpg');
+  background-image: url('../public/backgrounds/background_1.jpg');
+  height: 85vh;
   background-size: cover;
   padding: 20px;
   padding-top: 100px;
