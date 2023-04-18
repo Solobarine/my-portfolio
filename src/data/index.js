@@ -36,7 +36,7 @@ export const projects = [
     stack: 'Full Stack',
     tech: [
       {
-        name: 'React.js',
+        name: 'React',
         color: 'lime'
       },
       {
@@ -72,7 +72,7 @@ export const projects = [
     stack: 'Full Stack',
     tech: [
       {
-        name: 'Vue.js',
+        name: 'Vue',
         color: 'lime'
       },
       {
@@ -132,8 +132,16 @@ export const projects = [
     stack: 'Front-End',
     tech: [
       {
-        name: 'JavaScript',
+        name: 'HTML',
         color: 'lime'
+      },
+      {
+        name: 'CSS',
+        color: 'cyan'
+      },
+      {
+        name: 'JavaScript',
+        color: 'yellow'
       }
     ],
     status: 'Completed',
@@ -149,9 +157,9 @@ export const projects = [
     ]
   },
   {
-    image: '/project_image/nba.JPG',
+    image: '/project_image/nba.PNG',
     name: 'Nba World',
-    description: 'A site where users can see all NBA teams filtered according to their respective divisions.',
+    description: 'A selection of all NBA teams arranged according to their respective divisions.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     stack: 'Front End',
     tech: [
@@ -169,6 +177,30 @@ export const projects = [
       {
         live: 'https://nba-world.vercel.app',
         title: 'Live Website'
+      }
+    ]
+  },
+  {
+    image: '/project_image/calculator.PNG',
+    name: 'Math Magicians',
+    description: 'A Simple Calculator useful for solving basic Arithemetic problems like Addition, Subtraction, Multiplication and Division.',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    stack: 'Front End',
+    tech: [
+      {
+        name: 'React',
+        color: 'lime'
+      }
+    ],
+    status: 'Completed',
+    links: [
+      {
+        source: 'https://github.com/solobarine/math-magicians',
+        title: 'Source'
+      },
+      {
+        live: 'https://solly-math-magicians.netlify.com',
+        title: 'Live'
       }
     ]
   },
@@ -412,15 +444,11 @@ export const technologies = [
   },
   {
     name: 'Rails',
-    imgUrl: '/technologies/rails.png'
+    imgUrl: '/technologies/rails.svg'
   },
   {
     name: 'React',
     imgUrl: '/technologies/react.png'
-  },
-  {
-    name: 'Vite',
-    imgUrl: '/technologies/vitejs.svg'
   },
   {
     name: 'Redux',

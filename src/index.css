@@ -336,6 +336,8 @@ body {
 
 #about p {
   width: 60%;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 #about * {
