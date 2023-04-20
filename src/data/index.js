@@ -380,10 +380,6 @@ export const os = [
     imgUrl: '/technologies/os/windows.png'
   },
   {
-    name: 'Kali',
-    imgUrl: '/technologies/os/kali.png'
-  },
-  {
     name: 'Ubuntu',
     imgUrl: '/technologies/os/ubuntu.png'
   }
