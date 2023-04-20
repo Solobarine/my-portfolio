@@ -1,0 +1,559 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 19;
+}
+
+.nav > div {
+  padding: 5px 15px;
+}
+
+.nav > div > div:nth-child(1) img {
+  width: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nav div {
+  background-color: purple;
+  display: flex;
+  gap: 20px;
+  color: #eee;
+}
+
+#links {
+  width: 35%;
+  margin: auto;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+#links a {
+  text-decoration: none;
+  color: #eee;
+}
+
+#close {
+  width: 40px;
+  height: 40px;
+  display: none;
+  transition: .3s ease;
+}
+
+#menu {
+  position: fixed;
+  opacity: 0;
+  z-index: 18;
+  top: -150px;
+  border-radius: 30px;
+  right: 10px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background-image: linear-gradient(45deg, rgba(0, 255, 255, 1), rgba(150, 0, 150, .9) 60%);
+  transition: .6s ease;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #eee;
+  width: 150px;
+  text-align: center;
+ ;
+}
+
+.hero > div:nth-child(1) {
+  display: flex;
+  gap: 10px;
+  width: 70%;
+  margin: auto;
+  color: #eee;
+}
+
+#strip div:nth-child(1){
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: purple;
+}
+
+#strip div:nth-child(2) {
+  width: 10px;
+  margin-top: -10px;
+  height: 180px;
+  background-image: linear-gradient(purple, #003);
+}
+
+.hero {
+  background-image: url('../public/backgrounds/background_1.jpg');
+  height: 85vh;
+  background-size: cover;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+#intro h1 {
+  font-size: 40px;
+}
+
+#intro p {
+  margin-top: -20px;
+  font-size: 25px;
+}
+
+#computer {
+  margin-top: -30px;
+  height: 400px;
+}
+
+#technologies {
+  background-color: #004;
+  margin-top: -20px;
+}
+
+#technologies h2 {
+  color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+#tech {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+.tech > div {
+  width: 80px;
+  border-radius: 20px;
+  border: 3px solid cyan;
+  height: 120px;
+  background-image: linear-gradient(56deg, orange, #e040fb);
+}
+
+#techContent {
+  transform: translateY(40px);
+}
+
+#techContent h4 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 17px;
+}
+
+.techImg {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.techImg img {
+  width: 30px;
+  height: 30px;
+}
+
+.systems {
+  background-color: #004;
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+
+.systems h2 {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  color: #eee;
+}
+
+.system {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 65%;
+  margin: auto;
+}
+
+.tool {
+  width: 100px;
+  height: 100px;
+}
+
+#education {
+  background-color: #004;
+  padding: 20px;
+}
+
+#education h2 {
+  text-align: center;
+  color: #eee;
+}
+
+.vertical-timeline-element-content.bounce-in {
+  background-image: linear-gradient(45deg, #00adb5, darkmagenta);
+
+}
+
+.experienceCard {
+  margin: auto;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.experienceCard ul {
+  padding-left: 20px;
+}
+
+.experienceCard ul li {
+  margin-top: 10px;
+}
+
+.school {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.school img {
+  width: 120%;
+  object-fit: contain;
+}
+
+#works {
+  background-color: #004;
+  padding: 20px;
+  color: #eee;
+}
+
+#works h2 {
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#projects {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  width: 200px;
+  background-color: rgba(160, 0, 160, .3);
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid cyan;
+}
+
+.project > div {
+  position: relative;
+  height: 120px;
+  background-color: navajowhite;
+  border: 3px solid #888;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.project > div img {
+  width: 120%;
+  background-size: cover;
+}
+
+.project p {
+  font-size: .75rem;
+  margin-top: 5px;
+}
+
+.project ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+
+.project h4,
+.project h6 {
+  margin:0px auto;
+}
+
+.project_links {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 7px;
+  top: 5px;
+  right: 10px;
+}
+
+.project_links a {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.project_links a img {
+  width: 100%;
+}
+
+#about {
+  background-color: #004;
+  padding: 20px;
+}
+
+#about p {
+  width: 60%;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#about * {
+  text-align: start;
+  margin-bottom: 15px;
+  color: #eee;
+  margin-left: 15%;
+}
+
+.contact {
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.space {
+  width: 250%;
+  height: auto;
+  position: absolute;
+  inset: 0;
+  background-color: #004;
+  z-index: -1;
+}
+
+.contact > div {
+  display: grid;
+  grid-template-columns: .8fr 1fr;
+}
+
+#contact form {
+  display: grid;
+  grid-template-columns: .6fr 1fr;
+  gap: 25px;
+  width: 60%;
+  background-color: rgba(150, 150, 150, .3);
+  margin: auto;
+  padding: 15px 30px;
+  border-radius: 40px;
+}
+
+#contact form input,
+textarea {
+  grid-column: 1/span 2;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 0;
+  border: 1px solid grey;
+}
+
+textarea {
+  height: 200px;
+}
+
+#contact form h2 {
+  grid-column: 1/span 2;
+  text-align: center;
+  color: #eee;
+}
+
+#contact form input[type='submit'] {
+  grid-column: 1/span 1;
+  background-color: #20b970;
+  color: #fff;
+}
+
+footer {
+  background-image: linear-gradient(#004, purple);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  color: #eee;
+  text-align: center;
+  font-size: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials > div {
+  width: 40px;
+  height: 40px;
+  transition: .3s ease;
+}
+
+.socials > div:hover {
+  transform: translateY(-10px);
+}
+
+.socials > div > img {
+  width: 100%;
+}
+
+.socials > div:nth-child(2) {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav > div {
+    height: 60px;
+    position: static;
+  }
+
+  .nav > div > div:nth-child(1) img {
+    width: 40px;
+    height: 60px;
+  }
+  
+  .nav > div > div:nth-child(1) p {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px 0;
+    margin-left: -15px;
+  }
+
+  #s {
+    display: none;
+  }
+
+  #title {
+    display: none;
+  }
+
+  .nav > div {
+    justify-content: space-between;
+  }
+
+  #close {
+    display: block;
+    margin-top: 10px;
+    margin-right: 0;
+    border-radius: 50%;
+  }
+
+  #close img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #links {
+    display: none;
+  }
+
+  #menu {
+    opacity: 1;
+  }
+
+  .hero {
+    padding-top: 130px;
+  }
+
+  .hero > div:nth-child(1) {
+    width: 100%;
+  }
+
+  #intro h1 {
+    font-size: 30px;
+  }
+
+  #intro p {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .technologies {
+    height: auto;
+  }
+
+  #tech {
+    width: 95%;
+  }
+
+  .tool {
+    width: 40px;
+    height: 40px;
+  }
+
+  .experienceCard {
+    width: 100%;
+  }
+
+  #about * {
+    margin-left: 0;
+  }
+
+  #about p {
+    width: 100%;
+  }
+
+  .space {
+    width: 100%;
+  }
+
+  .contact div {
+    grid-template-columns: 1fr;
+  }
+
+  #contact {
+    margin-left: 0;
+    grid-area: 2/1/span 1/span 1;
+  }
+
+  #contact form {
+    padding: 5px 20px;
+    width: 85%;
+    gap: 15px;
+  }
+
+  #contact form input[type='submit'] {
+    font-size: 10px;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+  }
+}
