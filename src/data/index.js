@@ -205,7 +205,7 @@ export const projects = [
     ]
   },
   {
-    image: '/project_image/leaderboard.JPG',
+    image: '/project_image/leaderboard.PNG',
     name: 'Leaderboard',
     description: 'Users can use the Leaderboard website to save highscores along with their name and also view all the scores previously entered. ',
     languages: ['HTML', 'CSS', 'JavaScript'],
