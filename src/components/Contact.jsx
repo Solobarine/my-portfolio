@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import emailjs from "@emailjs/browser"
 
 const Contact = () => {
@@ -65,7 +65,7 @@ const Contact = () => {
          value={mail} name="mail" id="message"
           placeholder="Write your message"></textarea>
         {(error) && <p id="form_error">{error}</p>}
-        <input type="submit" value={text}/>
+        <input onClick={send_mail} type="submit" value={text}/>
       </form>
     </section>
   )
