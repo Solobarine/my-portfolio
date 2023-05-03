@@ -1,5 +1,4 @@
 import ContactUs from './views/ContactUs'
-import OperatingSystem from './components/OperatingSystem';
 import Hero from './views/Hero';
 import Nav from './views/Nav';
 import Tech from './components/Tech';
