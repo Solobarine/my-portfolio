@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser"
 
 const Contact = () => {
   // Status of sent mail
-  const [status, setStatus] = useState('failed')
+  const [status, setStatus] = useState('idle')
   const [error, setError] = useState('')
   const [text, setText] = useState()
   const [sender_email, setSenderEmail] = useState()

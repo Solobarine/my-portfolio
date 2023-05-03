@@ -1,0 +1,11 @@
+Model Information:
+* title:	PHP Elephant in 3D
+* source:	https://sketchfab.com/3d-models/php-elephant-in-3d-e8f9492323a64cbc9beaa5c212538ed9
+* author:	photogrammetryblender3D (https://sketchfab.com/photogrammetryblender3D)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PHP Elephant in 3D" (https://sketchfab.com/3d-models/php-elephant-in-3d-e8f9492323a64cbc9beaa5c212538ed9) by photogrammetryblender3D (https://sketchfab.com/photogrammetryblender3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

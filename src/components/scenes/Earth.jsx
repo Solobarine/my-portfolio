@@ -3,7 +3,9 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF, Preload } from '@react-three/drei'
 
 const Earth = () => {
-  const earth = useGLTF('./models/earth/scene.gltf')
+  // const earth = useGLTF('./models/earth/scene.gltf')
+  const earth = useGLTF(`./models/earth/scene.gltf`)
+
 
   return (
     <primitive 

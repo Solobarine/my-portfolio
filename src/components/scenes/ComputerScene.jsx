@@ -22,7 +22,7 @@ const ComputerScene = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{position: [20, 30, 15], fov: 20}}
+      camera={{position: [20, 30, 5], fov: 20}}
       gl={{preserveDrawingBuffer: true}}
   >
     <OrbitControls
