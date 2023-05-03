@@ -15,7 +15,6 @@ function App() {
       <Hero />
       <About />
       <Tech />
-      <OperatingSystem />
       <Experience />
       <Works />
       <ContactUs />
