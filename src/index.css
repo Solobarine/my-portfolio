@@ -130,7 +130,7 @@ body {
 #technologies h2 {
   color: #eee;
   padding: 10px;
-  text-align: center;
+  margin-left: 15%;
 }
 
 #tech {
@@ -176,16 +176,17 @@ body {
 }
 
 .systems {
+  padding-top: 30px;
   background-color: #004;
-  margin-top: -20px;
   padding-bottom: 30px;
 }
 
 .systems h2 {
   padding: 10px;
   font-size: 25px;
-  text-align: center;
   color: #eee;
+  margin-left: 15%;
+  margin-top: 30px;
 }
 
 .system {
@@ -208,7 +209,7 @@ body {
 }
 
 #education h2 {
-  text-align: center;
+  margin-left: 15%;
   color: #eee;
 }
 
@@ -220,7 +221,7 @@ body {
 .experienceCard {
   margin: auto;
   margin-top: 25px;
-  width: 100%;
+  width: 80%;
 }
 
 .experienceCard ul {
@@ -255,7 +256,7 @@ body {
 #works h2 {
   padding: 15px;
   font-size: 25px;
-  text-align: center;
+  margin-left: 15%;
 }
 
 #projects {
@@ -336,8 +337,8 @@ body {
 
 #about p {
   width: 60%;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 #about * {
@@ -395,6 +396,10 @@ textarea {
   grid-column: 1/span 2;
   text-align: center;
   color: #eee;
+}
+
+#form_error {
+  grid-column: span 2;
 }
 
 #contact form input[type='submit'] {
