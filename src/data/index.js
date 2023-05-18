@@ -6,6 +6,12 @@ export const logo = [
     img: '/logos/s_logo.png'
   },
   {
+    img: '/logos/s_logo_2.png'
+  },
+  {
+    img: 'logos/s_logo_3.png'
+  },
+  {
     img: '/logos/x_logo.jpg'
   },
   {
