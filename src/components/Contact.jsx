@@ -14,16 +14,17 @@ const Contact = () => {
   const public_key = 'aY2gQTpkebRglB2IJ'
 
   const message = {
-    sender_email,
+    email: sender_email,
     mail,
   }
 
-  console.log(text)
+  console.log(message)
+  // console.log(sender_email, mail);
 
   useEffect(() => {
     switch (status) {
       case 'idle':
-        setText('Send Message')
+        setText('Send')
         break
       case 'pending':
         setText('Sending')
@@ -32,18 +33,19 @@ const Contact = () => {
         setText('Mail Sent')
         break
       case 'failed':
-        setText('Send Message')
+        setText('Send')
         setError('Failed to Send')
         break
       default:
-        setText('Send Message')
+        setText('Send')
     }
   }, [status])
 
   const send_mail = (e) => {
     e.preventDefault()
+    console.log(message)
     setStatus('pending')
-    emailjs.send(service_id, template_id, message, public_key)
+    emailjs.send(service_id, template_id, {}, public_key)
     .then(response => {
       console.log(response.text);
       setStatus('success')

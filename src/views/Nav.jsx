@@ -18,7 +18,7 @@ const Nav = () => {
     <nav className="nav" id='navigation'>
       <div>
         <div>
-          <a href='#landing'><img src={logo[1].img} alt="Solly"/></a>
+          <a href='#landing'><img src={logo[5].img} alt="Solly"/></a>
           <p><span id='s'>S</span>olly<span id="title"> | Web Developer</span></p>
         </div>
         <div id='links'>
