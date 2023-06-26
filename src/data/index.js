@@ -267,6 +267,38 @@ export const projects = [
     ]
   },
   {
+    image: '/project_image/nova.png',
+    name: 'Nova',
+    description: 'A Series Website where you can find your favourite series. It features functionalities like User Auth, Persisted Login, Pagination and many more',
+    languages: ['TypeScript', 'PHP'],
+    stack: 'FullStack',
+    tech: [
+      {
+        name: 'React',
+        color: 'lime'
+      },
+      {
+        name: 'Laravel',
+        color: 'gold'
+      }
+    ],
+    status: 'Completed',
+    links: [
+      {
+        source: 'https://github.com/solobarine/nova',
+        title: 'Front End Source'
+      },
+      {
+        source: 'https://github.com/solobarine/nova_backend',
+        title: 'Back End Source'
+      },
+      {
+        live: 'https://nova-solobarine.vercel.app',
+        title: 'Live Website'
+      }
+    ]
+  },
+  {
     image: '/project_image/ruby.png',
     name: 'School Library',
     description: 'A commabd-line app which lets users register themselves, create a book and reserve a book.',
@@ -392,90 +424,6 @@ export const os = [
 ]
 
 export const technologies = [
-  {
-    name: 'Bootstrap',
-    imgUrl: '/technologies/bootstrap.png'
-  },
-  {
-    name: 'Figma',
-    imgUrl: '/technologies/figma.png'
-  },
-  {
-    name: 'Tailwind',
-    imgUrl: '/technologies/tailwind.svg'
-  },
-  {
-    name: 'JavaScript',
-    imgUrl: '/technologies/js.png'
-  },
-  {
-    name: 'Laravel',
-    imgUrl: '/technologies/laravel.svg'
-  },
-  {
-    name: 'MongoDB',
-    imgUrl: '/technologies/mongodb.svg'
-  },
-  {
-    name: 'MySQL',
-    imgUrl: '/technologies/mysql.svg'
-  },
-  {
-    name: 'Node Js',
-    imgUrl: '/technologies/node.svg'
-  },
-  {
-    name: 'Git',
-    imgUrl: '/technologies/git.png'
-  },
-  {
-    name: 'Express',
-    imgUrl: '/technologies/express.png'
-  },
-  {
-    name: 'PHP',
-    imgUrl: '/technologies/php.png'
-  },
-  {
-    name: 'Posgres',
-    imgUrl: '/technologies/postgre.png'
-  },
-  {
-    name: 'Ruby',
-    imgUrl: '/technologies/ruby.png'
-  },
-  {
-    name: 'Rails',
-    imgUrl: '/technologies/rails.svg'
-  },
-  {
-    name: 'React',
-    imgUrl: '/technologies/react.png'
-  },
-  {
-    name: 'Redux',
-    imgUrl: '/technologies/redux.png'
-  },
-  {
-    name: 'Three Js',
-    imgUrl: '/technologies/threejs.svg'
-  },
-  {
-    name: 'Pinia',
-    imgUrl: '/technologies/pinia.svg'
-  },
-  {
-    name: 'Vue.js',
-    imgUrl: '/technologies/vue.svg'
-  },
-  {
-    name: 'Jest',
-    imgUrl: '/technologies/jest.svg'
-  },
-  {
-    name: 'Webpack',
-    imgUrl: '/technologies/webpack.svg'
-  }
 ]
 
 export const about = {
