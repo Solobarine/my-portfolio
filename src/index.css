@@ -139,17 +139,51 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  width: 70%;
   margin: auto;
   padding: 20px;
+  
 }
 
-.tech > div {
-  width: 80px;
-  border-radius: 20px;
-  border: 3px solid cyan;
-  height: 120px;
-  background-image: linear-gradient(56deg, orange, #e040fb);
+.stack {
+  width: 80%;
+  margin: auto;
+  color: #eee;
+}
+
+.stack > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(150, 150, 150, .3);
+  gap: 30px;
+  padding: 10px;
+  border-radius: 15px;
+  
+}
+
+.tech_skill {
+  display: flex;
+  background-image: linear-gradient(60deg, #eee, #003 60%);
+  align-items: center;
+  width: 200px;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tech_skill > img {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tech_skill > p {
+  font-size: 17px;
+  font-weight: 600;
+  color: gold;
 }
 
 #techContent {
@@ -376,7 +410,7 @@ body {
   background-color: rgba(150, 150, 150, .3);
   margin: auto;
   padding: 15px 30px;
-  border-radius: 40px;
+  border-radius: 15px;
 }
 
 #contact form input,
