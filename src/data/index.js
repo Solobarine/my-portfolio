@@ -71,6 +71,42 @@ export const projects = [
     ]
   },
   {
+    image: '/project_image/continental.png',
+    name: 'Continental',
+    description: '"Continental" is a Vue.js app that lets users deposit and transfer money securely. It offers features like form validation, routing, and Pinia for state management.Features include: Secure money deposits with real-time updates, Easy fund transfers with confirmation, Unique account numbers upon registration.',
+    languages: ['TypeScript', 'PHP', 'HTML', 'CSS'],
+    stack: 'Full Stack',
+    tech: [
+      {
+        name: 'Vue',
+        color: 'lime'
+      },
+      {
+        name: 'Laravel',
+        color: 'cyan'
+      },
+      {
+        name: 'MySQL',
+        color: 'yellow'
+      }
+    ],
+    status: 'Completed',
+    links: [
+      {
+        source: 'https://github.com/Solobarine/continental',
+        title: 'Front-End Source'
+      },
+      {
+        source:'https://github.com/Solobarine/continental_backend',
+        title: 'Back-End Source'
+      },
+      {
+        live: 'https://continental-kappa.vercel.app',
+        title: 'Live Website'
+      }
+    ]
+  },
+  {
     image: '/project_image/dart.jpg',
     name: 'Dart',
     description: 'This is a financial services website. Users can deposit funds, send and receive money to and from fellow users only when they create an account.',
@@ -371,7 +407,7 @@ export const educationAndExperience = [
     ]
   },
   {
-    logo: '/logos/logo.jpg',
+    logo: '/logos/x_logo.jpg',
     role: 'Full-stack Web Developer',
     name: 'Freelancer',
     field: 'Web Development',
@@ -387,7 +423,7 @@ export const socials = [
   {
     name: 'FaceBook',
     logo: '/socials/facebook-s.png',
-    url: 'https://facebook.com/solomon-akpuru'
+    url: 'https://facebook.com/solomon.akpuru.3'
   },
   {
     name: 'GitHub',
@@ -402,12 +438,12 @@ export const socials = [
   {
     name: 'Gmail',
     logo: '/socials/gmail.png',
-    url: 'solobarine@gmail.com'
+    url: 'mailto:solobarine@gmail.com?subject=Job%20Offer'
   },
   {
     name: 'LinkedIn',
     logo: '/socials/linkedin.png',
-    url: 'https://linkedin.com/solomon-akpuru'
+    url: 'https://linkedin.com/in/solomon-akpuru'
   },
 ]
 

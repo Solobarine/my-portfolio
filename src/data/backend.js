@@ -1,5 +1,9 @@
 const back_end = [
     {
+        name: 'Node Js',
+        imgUrl: '/technologies/nodejs.svg'
+    },
+    {
         name: 'Laravel',
         imgUrl: '/technologies/laravel.svg'
     },
