@@ -8,7 +8,11 @@ const databases = [
         imgUrl: '/technologies/mysql.svg'
     },
     {
-        name: 'Posgres',
+        name: 'MariaDB',
+        imgUrl: '/technologies/mariadb.svg'
+    },
+    {
+        name: 'PosgreSQL',
         imgUrl: '/technologies/postgre.png'
     }
 ]

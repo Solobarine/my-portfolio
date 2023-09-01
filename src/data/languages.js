@@ -1,9 +1,5 @@
 const languages = [
     {
-        name: 'Node Js',
-        imgUrl: '/technologies/nodejs.svg'
-    },
-    {
         name: 'JavaScript',
         imgUrl: '/technologies/js.png'
     },
@@ -18,6 +14,14 @@ const languages = [
     {
         name: 'Ruby',
         imgUrl: '/technologies/ruby.svg'
+    },
+    {
+        name: 'Go',
+        imgUrl: '/technologies/go.svg'
+    },
+    {
+        name: 'Rust',
+        imgUrl: '/technologies/rust.svg'
     }
 ]
 

@@ -1,13 +1,18 @@
-import { motion } from "framer-motion"
-import { stagger } from "../data/variants"
+const TechSkill = ({data, title}) => {
 
-const TechSkill = ({data, index}) => {
-    const {imgUrl, name} = data
-    console.log(data);
-  return (
+    return (
         <div className="tech_skill">
-            <img src={imgUrl} alt=""/>
-            <p>{name}</p>
+            <h3>{title}</h3>
+            <div className="tech_contents">
+                {
+                    data.map(item => (
+                        <div>
+                            <img src={item.imgUrl} alt=""/>
+                            <p>{item.name}</p>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     )
 }

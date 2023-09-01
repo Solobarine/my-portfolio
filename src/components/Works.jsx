@@ -29,8 +29,23 @@ const Card = ({project, index}) => {
         {
           project.links.map((item, index) => (
             (item.source)
-            ? <a href={item.source} key={index} style={{ backgroundColor: '#eee' }}><img src="/socials/github-sign.png" alt=""/></a>
-            : <a href={item.live} key={index}><img src="/logos/internet.png" alt=""/></a>
+            ?
+            <a 
+            target='_blank'
+            rel="noreferrer"
+            href={item.source}
+            key={index}
+            style={{ backgroundColor: '#eee' }}>
+              <img src="/socials/github-sign.png" alt=""/>
+            </a>
+            :
+            <a
+            target='_blank'
+            rel="noreferrer"
+            href={item.live}
+            key={index}>
+              <img src="/logos/internet.png" alt=""/>
+            </a>
           ))
         }
         </div>

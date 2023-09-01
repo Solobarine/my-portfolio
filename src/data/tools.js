@@ -6,10 +6,14 @@ const tools = [
     {
         name: 'Figma',
         imgUrl: '/technologies/figma.png'
-    }, 
+    },
     {
-        name: 'Webpack',
-        imgUrl: '/technologies/webpack.svg'
+        name: 'Ubuntu',
+        imgUrl: '/technologies/os/ubuntu.png'
+    },
+    {
+        name: 'Windows',
+        imgUrl: '/technologies/os/windows.png'
     }
 ]
 

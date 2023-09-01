@@ -28,6 +28,14 @@ const front_end = [
         imgUrl: '/technologies/tailwind.svg'
     },
     {
+        name: 'Webpack',
+        imgUrl: '/technologies/webpack.svg'
+    },
+    {
+        name: 'Framer Motion',
+        imgUrl: '/technologies/framer_motion.svg'
+    },
+    {
         name: 'Sass',
         imgUrl: '/technologies/sass.svg'
     },
