@@ -4,12 +4,16 @@ const test_tools = [
         imgUrl: '/technologies/jest.svg'
     },
     {
+        name: 'Cypress',
+        imgUrl: '/technologies/cypress.svg'
+    },
+    {
         name: 'RSpec',
         imgUrl: '/technologies/rspec.svg'
     },
     {
-        name: 'Cypress',
-        imgUrl: '/technologies/cypress.svg'
+        name: 'PHPUnit',
+        imgUrl: '/technologies/php_unit.svg'
     }
 ]
 
