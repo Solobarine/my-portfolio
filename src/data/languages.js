@@ -18,10 +18,6 @@ const languages = [
     {
         name: 'Go',
         imgUrl: '/technologies/go.svg'
-    },
-    {
-        name: 'Rust',
-        imgUrl: '/technologies/rust.svg'
     }
 ]
 
