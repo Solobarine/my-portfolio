@@ -1,5 +1,35 @@
+import { useAnimation, motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 import { skills } from "../data/skills";
+import { stagger } from '../data/variants';
 import TechSkill from "./TechSkill";
+
+const Card = ({index, skill}) => {
+    const controls = useAnimation()
+    
+    const [ref, inView] = useInView()
+  
+    useEffect(() => {
+      if (inView) {
+        controls.start('visible')
+      }
+        }, [controls, inView])
+
+  return(
+    <motion.div
+    style={{'transition': `${0.2 * index}`}}
+    ref={ref}
+    variants={stagger(index)}
+    initial='hidden'
+    animate={controls}
+    className="stack">
+        <div>
+            <TechSkill key={index} data={skill.content} title={skill.title}/>
+        </div>
+    </motion.div>
+  )
+}
 
 const Tech = () => {
 
@@ -9,9 +39,9 @@ const Tech = () => {
       <div>
         {
           skills.map((skill, index) => (
-            <div className="stack">
+            <div style={{'transition': `${0.2 * index}`}} className="stack">
               <div>
-                  <TechSkill key={index} data={skill.content} title={skill.title}/>
+                  <Card key={index} skill={skill}/>
               </div>
             </div>
           ))
