@@ -1,9 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -57,7 +56,7 @@ body {
   width: 40px;
   height: 40px;
   display: none;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 #menu {
@@ -71,8 +70,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  background-image: linear-gradient(45deg, rgba(0, 255, 255, 1), rgba(150, 0, 150, .9) 60%);
-  transition: .6s ease;
+  background-image: linear-gradient(45deg, rgba(0, 255, 255, 1), rgba(150, 0, 150, 0.9) 60%);
+  transition: 0.6s ease;
 }
 
 #menu a {
@@ -80,7 +79,6 @@ body {
   color: #eee;
   width: 150px;
   text-align: center;
- ;
 }
 
 .hero > div:nth-child(1) {
@@ -91,7 +89,7 @@ body {
   color: #eee;
 }
 
-#strip div:nth-child(1){
+#strip div:nth-child(1) {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -124,7 +122,9 @@ body {
 
 #computer {
   margin-top: -30px;
-  height: 400px;
+  aspect-ratio: 16 / 9;
+  max-height: 400px;
+  margin: auto;
 }
 
 #technologies {
@@ -153,7 +153,6 @@ body {
   gap: 30px;
   margin: auto;
   padding: 20px;
-  
 }
 
 .stack {
@@ -170,11 +169,10 @@ body {
   gap: 30px;
   padding: 10px;
   border-radius: 15px;
-  
 }
 
 .tech_skill {
-  background-color: rgba(150, 150, 150, .3);
+  background-color: rgba(150, 150, 150, 0.3);
   border-radius: 20px;
   border: 1px solid #eee;
   padding: 0 20px;
@@ -254,7 +252,6 @@ body {
 
 .vertical-timeline-element-content.bounce-in {
   background-image: linear-gradient(45deg, #00adb5, darkmagenta);
-
 }
 
 .experienceCard {
@@ -310,7 +307,7 @@ body {
 
 .project {
   width: 200px;
-  background-color: rgba(150, 150, 150, .3);
+  background-color: rgba(150, 150, 150, 0.3);
   padding: 10px;
   border-radius: 20px;
   border: 2px solid cyan;
@@ -331,7 +328,7 @@ body {
 }
 
 .project p {
-  font-size: .75rem;
+  font-size: 0.75rem;
   margin-top: 5px;
 }
 
@@ -346,7 +343,7 @@ body {
 
 .project h4,
 .project h6 {
-  margin:0px auto;
+  margin: 0px auto;
 }
 
 .project_links {
@@ -404,15 +401,15 @@ body {
 
 .contact > div {
   display: grid;
-  grid-template-columns: .8fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
 }
 
 #contact form {
   display: grid;
-  grid-template-columns: .6fr 1fr;
+  grid-template-columns: 0.6fr 1fr;
   gap: 25px;
   width: 60%;
-  background-color: rgba(150, 150, 150, .3);
+  background-color: rgba(150, 150, 150, 0.3);
   margin: auto;
   padding: 15px 30px;
   border-radius: 15px;
@@ -420,7 +417,7 @@ body {
 
 #contact form input,
 textarea {
-  grid-column: 1/span 2;
+  grid-column: 1 / span 2;
   padding: 15px;
   border-radius: 10px;
   min-width: 0;
@@ -432,7 +429,7 @@ textarea {
 }
 
 #contact form h2 {
-  grid-column: 1/span 2;
+  grid-column: 1 / span 2;
   text-align: center;
   color: #eee;
 }
@@ -442,7 +439,7 @@ textarea {
 }
 
 #contact form input[type='submit'] {
-  grid-column: 1/span 1;
+  grid-column: 1 / span 1;
   background-color: #20b970;
   color: #fff;
 }
@@ -468,7 +465,7 @@ footer p {
 .socials > a {
   width: 40px;
   height: 40px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .socials > a:hover {
@@ -494,7 +491,7 @@ footer p {
     width: 40px;
     height: 60px;
   }
-  
+
   .nav > div > div:nth-child(1) p {
     font-size: 30px;
     font-weight: 800;
@@ -536,6 +533,7 @@ footer p {
 
   .hero {
     padding-top: 130px;
+    height: 80vh;
   }
 
   .hero > div:nth-child(1) {
@@ -590,7 +588,7 @@ footer p {
 
   #contact {
     margin-left: 0;
-    grid-area: 2/1/span 1/span 1;
+    grid-area: 2/1 / span 1 / span 1;
   }
 
   #contact form {
