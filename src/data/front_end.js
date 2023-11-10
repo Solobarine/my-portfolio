@@ -24,10 +24,6 @@ const front_end = [
     imgUrl: '/technologies/threejs.svg'
   },
   {
-    name: 'Bootstrap',
-    imgUrl: '/technologies/bootstrap.png'
-  },
-  {
     name: 'Tailwind',
     imgUrl: '/technologies/tailwind.svg'
   },
@@ -43,6 +39,6 @@ const front_end = [
     name: 'Sass',
     imgUrl: '/technologies/sass.svg'
   }
-]
+];
 
-export default front_end
+export default front_end;
