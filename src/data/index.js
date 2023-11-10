@@ -38,11 +38,11 @@ export const educationAndExperience = [
     logo: '/logos/microverse.jpg',
     role: 'Student',
     name: 'Microverse',
-    field: 'Web Development',
-    year: 'June 2022 - Current',
+    field: 'Software Development',
+    year: 'June 2022 - July 2023',
     highlights: [
       'Implement Redux state management in a React App',
-      'Work in a team to create a React website consuming the Space X API',
+      'Work in a team to create a Full Stack Car Bookings Application  using Ruby on Rails, React and Redux',
       'Collaborated in a team to consume an API in a vanilla JS projects',
       'Develop a command-line Library App using Ruby',
       'Develop communication skills while collaborating with my peers from different parts of the world'
@@ -53,7 +53,7 @@ export const educationAndExperience = [
     role: 'Student',
     name: 'University of Port-Harcourt',
     field: 'Gas Engineering',
-    year: 'September 2016 - February 2023',
+    year: 'September 2016 - March 2023',
     highlights: [
       'Studied Reservoir Estimation using models',
       'Sub-surface production',
@@ -65,13 +65,15 @@ export const educationAndExperience = [
   },
   {
     logo: '/logos/x_logo.jpg',
-    role: 'Full-stack Web Developer',
+    role: 'Full-stack Software Developer',
     name: 'Freelancer',
-    field: 'Web Development',
-    year: 'October 2022 - Current',
+    field: 'Software Development',
+    year: 'January 2023  - Current',
     highlights: [
-      'Developed a Full-Stack Financial Website using Vue.js and Laravel',
-      'Develop a Travel Website using React and Express'
+      'Optimized Image Storing System for a Full Stack Application leading to a 57.6% decrease in API loading times.',
+      'Developed and deployed a secure Full Stack Application for Financial Transactions',
+      'Led the design, development, and successful deployment of a feature-rich Travel Application using Node.js, React, and MongoDB.',
+      'Implemented user authentication and authorization for various applications using industry best practices, safeguarding user data and ensuring secure access to sensitive features.'
     ]
   }
 ]
