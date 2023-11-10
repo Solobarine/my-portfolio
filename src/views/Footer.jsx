@@ -1,7 +1,7 @@
-import { socials } from '../data';
+import { socials } from '../data'
 
 const Footer = () => {
-  const date = new Date();
+  const date = new Date()
   return (
     <footer>
       <div className='socials'>
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <p>Copyright &copy; {date.getFullYear()}. All rights reserved.</p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
