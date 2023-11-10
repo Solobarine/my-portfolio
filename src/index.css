@@ -40,6 +40,7 @@ body {
 
 .nav div {
   background-color: purple;
+  border-radius: 0.5em;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -349,7 +350,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 4em;
-
   list-style: none;
   margin: 0;
   padding: 0;
@@ -434,20 +434,41 @@ body {
 }
 
 #about * {
-  text-align: start;
   margin-bottom: 15px;
   color: #eee;
   margin-left: 15%;
+}
+
+.resumeDownload {
+  text-decoration: none;
+  text-align: center;
+  max-width: 15em;
+  display: block;
+  padding: 0.6em 2em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: purple;
+  transform: translateY(0);
+  transition: 1.5s ease;
+}
+
+.resumeDownload:hover {
+  margin-top: 1em;
+  transform: translateY(-10px);
+  background-color: #00adb5;
+  color: #004;
+  transition: 0.5s ease;
 }
 
 .contact {
   padding: 10px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .space {
-  width: 250%;
   height: auto;
   position: absolute;
   inset: 0;
@@ -457,14 +478,18 @@ body {
 
 .contact > div {
   display: grid;
-  grid-template-columns: 0.8fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#contact_component {
+  width: 100%;
 }
 
 #contact form {
   display: grid;
   grid-template-columns: 0.6fr 1fr;
   gap: 25px;
-  width: 60%;
+  max-width: 30em;
   background-color: rgba(150, 150, 150, 0.3);
   margin: auto;
   padding: 15px 30px;
@@ -503,6 +528,7 @@ textarea {
 footer {
   display: grid;
   gap: 1em;
+  padding: 1em;
   background-image: linear-gradient(#004, purple);
   padding-top: 40px;
   padding-bottom: 20px;
@@ -516,6 +542,7 @@ footer p {
 
 .socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
@@ -607,6 +634,13 @@ footer p {
     font-size: 20px;
   }
 
+  .resumeDownload:hover {
+    transform: translateY(0);
+    background-color: purple;
+    color: #eee;
+    transition: 0.5s ease;
+  }
+
   .technologies {
     height: auto;
   }
@@ -651,7 +685,6 @@ footer p {
 
   #contact form {
     padding: 5px 20px;
-    width: 85%;
     gap: 15px;
   }
 
