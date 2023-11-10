@@ -1,22 +1,20 @@
-import { useAnimation, motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import Tilt from 'react-parallax-tilt';
-import { useEffect, useState } from 'react';
-import projects from '../data/projects';
-import { stagger } from '../data/variants';
+import { useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useEffect, useState } from 'react'
+import projects from '../data/projects'
 
 const Card = ({ project, index }) => {
-  const [isLarge, setIsLarge] = useState(false);
-  console.log(isLarge);
-  const controls = useAnimation();
+  const [isLarge, setIsLarge] = useState(false)
+  console.log(isLarge)
+  const controls = useAnimation()
 
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView()
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start('visible')
     }
-  }, [controls, inView]);
+  }, [controls, inView])
 
   return (
     <>
@@ -24,11 +22,13 @@ const Card = ({ project, index }) => {
         ref={ref}
         onBlur={() => setIsLarge(false)}
         className={`project ${isLarge ? 'modalOn' : ''}`}>
-        <button
-          onClick={() => setIsLarge(false)}
-          id='closeModal'>
-          &#10006;
-        </button>
+        {isLarge && (
+          <button
+            onClick={() => setIsLarge(false)}
+            id='closeModal'>
+            &#10006;
+          </button>
+        )}
         <img
           id='project_image'
           src={project.image}
@@ -117,8 +117,8 @@ const Card = ({ project, index }) => {
           id='overlay'></div>
       ) : null}
     </>
-  );
-};
+  )
+}
 
 const Works = () => {
   return (
@@ -161,7 +161,7 @@ const Works = () => {
         )}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Works;
+export default Works
