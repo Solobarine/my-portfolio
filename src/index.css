@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --height: 85vh;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +41,7 @@ body {
 .nav div {
   background-color: purple;
   display: flex;
+  align-items: center;
   gap: 20px;
   color: #eee;
 }
@@ -63,7 +74,7 @@ body {
   position: fixed;
   opacity: 0;
   z-index: 18;
-  top: -150px;
+  top: -200px;
   border-radius: 30px;
   right: 10px;
   padding: 15px;
@@ -104,8 +115,9 @@ body {
 }
 
 .hero {
+  position: relative;
   background-image: url('../public/backgrounds/background_1.jpg');
-  height: 85vh;
+  height: var(--height);
   background-size: cover;
   padding: 20px;
   padding-top: 100px;
@@ -116,20 +128,21 @@ body {
 }
 
 #intro p {
-  margin-top: -20px;
   font-size: 25px;
 }
 
 #computer {
-  margin-top: -30px;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: calc(var(--height) - 60%);
+  max-width: 40em;
+  transform: translateX(-50%);
   aspect-ratio: 16 / 9;
-  max-height: 400px;
-  margin: auto;
 }
 
 #technologies {
   background-color: #004;
-  margin-top: -20px;
 }
 
 #technologies > div {
@@ -175,9 +188,13 @@ body {
   background-color: rgba(150, 150, 150, 0.3);
   border-radius: 20px;
   border: 1px solid #eee;
-  padding: 0 20px;
+  padding: 1em;
   flex-grow: 1;
   width: 20em;
+}
+
+.tech_skill > h3 {
+  padding-bottom: 0.5em;
 }
 
 .tech_skill img {
@@ -191,7 +208,7 @@ body {
 }
 
 .tech_skill p {
-  font-size: 17px;
+  font-size: 0.9em;
   font-weight: 600;
   color: gold;
 }
@@ -209,30 +226,13 @@ body {
 .tech_contents > div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 0.7em;
 }
 
 .systems {
   padding-top: 30px;
   background-color: #004;
   padding-bottom: 30px;
-}
-
-.systems h2 {
-  padding: 10px;
-  font-size: 25px;
-  color: #eee;
-  margin-left: 15%;
-  margin-top: 30px;
-}
-
-.system {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  width: 65%;
-  margin: auto;
 }
 
 .tool {
@@ -246,7 +246,6 @@ body {
 }
 
 #education h2 {
-  margin-left: 15%;
   color: #eee;
 }
 
@@ -257,7 +256,6 @@ body {
 .experienceCard {
   margin: auto;
   margin-top: 25px;
-  width: 80%;
 }
 
 .experienceCard ul {
@@ -285,7 +283,6 @@ body {
 
 #works {
   background-color: #004;
-  padding: 20px;
   color: #eee;
 }
 
@@ -296,9 +293,10 @@ body {
 }
 
 #projects {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
@@ -306,25 +304,26 @@ body {
 }
 
 .project {
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+  max-width: 20em;
   background-color: rgba(150, 150, 150, 0.3);
   padding: 10px;
   border-radius: 20px;
   border: 2px solid cyan;
+  transition: 1s ease;
 }
 
-.project > div {
+.project > #project_image {
+  width: 100%;
   position: relative;
-  height: 120px;
+  aspect-ratio: 16 / 9;
   background-color: navajowhite;
   border: 3px solid #888;
   border-radius: inherit;
-  overflow: hidden;
-}
-
-.project > div img {
-  width: 120%;
-  background-size: cover;
+  background-size: contain;
 }
 
 .project p {
@@ -332,9 +331,25 @@ body {
   margin-top: 5px;
 }
 
+#project_languages > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.project_language,
+.tech_logo {
+  width: 2.5rem;
+  aspect-ratio: 1 / 1;
+}
+
 .project ul {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4em;
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -343,27 +358,68 @@ body {
 
 .project h4,
 .project h6 {
-  margin: 0px auto;
+  margin: 0;
+  margin-bottom: 0.3em;
 }
 
-.project_links {
-  position: absolute;
+#works > h3 {
+  font-size: 1.4em;
+  padding-left: 10%;
+}
+
+#project_tech > h6 {
+  font-size: 1em;
+}
+
+#project_links > h6 {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#project_links > div {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 7px;
-  top: 5px;
-  right: 10px;
+  align-items: center;
+  gap: 1em 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.project_links a {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  overflow: hidden;
+#project_links a {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 0.6em;
+  border-radius: 0.75em;
+  background-color: #00adb5;
+  gap: 1em;
+  text-decoration: none;
+  color: #eee;
+  scale: 0.9;
+  transition: 1s ease;
 }
 
-.project_links a img {
-  width: 100%;
+#project_links a:hover {
+  transition: 0.5s ease;
+  scale: 1.1;
+  background-color: purple;
+}
+
+#project_links a img {
+  width: 1.5em;
+  aspect-ratio: 1 / 1;
+}
+
+.toggleModal {
+  margin: auto;
+  align-self: center;
+  margin-top: 1em;
+  padding: 1em 2em;
+  border-radius: 0.7em;
+  color: #eee;
+  border: none;
+  background-color: #00adb5;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 #about {
@@ -445,6 +501,8 @@ textarea {
 }
 
 footer {
+  display: grid;
+  gap: 1em;
   background-image: linear-gradient(#004, purple);
   padding-top: 40px;
   padding-bottom: 20px;
@@ -601,5 +659,102 @@ footer p {
     font-size: 10px;
     padding: 10px 5px;
     margin-bottom: 20px;
+  }
+}
+
+/* Modal On */
+#closeModal {
+  background-color: #eee;
+  color: #f00;
+  width: 2em;
+  height: 2em;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 100;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#closeModal:hover {
+  background-color: #f00;
+  color: #eee;
+  scale: 1.1;
+}
+
+.modalOn {
+  position: fixed;
+  display: grid;
+  gap: 0.3em 1em;
+  width: 80%;
+  max-width: 50em;
+  max-height: 80%;
+  overflow-y: auto;
+  padding: 2em 1.2em;
+  background-color: #004;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: 0.5s ease;
+}
+
+.modalOn #project_links {
+  grid-column: 1 / span 2;
+  justify-content: space-between;
+}
+
+.modalOn #project_name {
+  grid-column: 1 / -1;
+}
+
+.modalOn #project_stack {
+  grid-column: 1 / span 2;
+}
+
+.modalOn #project_description {
+  grid-area: 1 / 2 / span 1 / span 1;
+  display: grid;
+  align-content: center;
+  font-size: 1em;
+}
+
+.modalOn h6 {
+  font-size: 1em;
+}
+
+.modalOn #project_languages > div,
+.modalOn #project_tech ul {
+  justify-content: flex-start;
+  gap: 2em;
+}
+
+.overlay_active {
+  background-color: rgb(19, 19, 102, 0.9);
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 50;
+}
+
+@media only screen and (max-width: 600px) {
+  .modalOn {
+    width: 95%;
+    display: flex;
+    padding: 1.5em;
+    flex-direction: column;
+  }
+
+  #closeModal {
+    top: 0.5em;
+    right: 0.5em;
+  }
+
+  #project_languages,
+  #project_tech {
+    display: grid;
+    margin-top: 0.6em;
+    gap: 0.5em;
   }
 }
